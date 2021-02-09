@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Basic Style */
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    cursor: default;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #F5FFFA;
+    font-size: inherit;
+}
+
+/* Header */
+
+.navigation-menu {
+    position: fixed;
+    width: 100vw;
+    height: 7rem;
+    display: flex;
+    color: #F5FFFA;
+    text-shadow: grey 0.4px 0.4px;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem 0 3rem;
+    overflow: hidden;
+    background-color: #2f5e4e;
+    z-index: 1;
+}
+
+.menu-items {
+    display: inline-flex;
+}
+
+.menu-item {
+    font-size: 1.6rem;
+    margin: 0 2.5rem 0 0;
+    animation: 1s;
+    transition: 0.2s ease-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-3px);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.logo-img {
+    max-width: 6rem;
+    margin: 0 1rem 0 0;
+}
+
+/* Section 1 - Presentation */
+
+.presentation {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #2f5e4e;
+    color: #F5FFFA;
+    padding-top: 7rem;
+}
+
+.presentation-text {
+    flex: 2;
+    padding: 0 0rem 0 4rem;
+    margin-top: -4rem;
+    margin-right: 6rem;
+}
+
+.presentation-text p {
+    text-align: justify;
+    padding-right: 6rem;
+}
+
+.presentation-photo {
+    width: 100%;
+    height: 70%;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    flex: 2;
+    background-image: url(images/studying.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.button-presentation {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #285042;
+    color: #F5FFFA;
+    width: 12rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.button-presentation:hover {
+    background-color: #F5FFFA;
+    color: #285042;
+}
+
+/* Section 2 - Foco */
+
+#foco {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 7rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.pine-tree {
+    text-align: center;
+    flex: 1;
+}
+
+.pine-tree img {
+    max-width: 40rem;
+}
+
+.foco-text {
+    text-align: center;
+    align-items: center;
+    flex: 2;
+}
+
+.foco-text p {
+    color: #696969;
+}
+
+.button-forest {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #F5FFFA;
+    background-color: #2f5e4e;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.button-forest:hover {
+    background-color: #F5FFFA;
+    color: #285042;
+}
+
+/* Section 3 - Lo-fi */
+
+#lo-fi {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #F5FFFA;
+    background-color: #2f5e4e;
+}
+
+.lo-fi-text {
+    text-align: center;
+    flex: 2;
+    margin-left: 5rem;
+}
+
+.lo-fi-text p {
+    text-align: justify;
+}
+
+.playlists {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.playlist {
+    flex: 1;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.image-container1 {
+    display: inline-flex;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+
+.image-container1:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/french-cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.image-container2 {
+    display: inline-flex;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+
+.image-container2:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/little-forest.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.image-container3 {
+    display: inline-flex;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+
+.image-container3:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/lofi-hiphop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* Section 4 - Faça Parte */
+
+#join-us {
+    width: 100vw;
+    height: 80vh;
+    padding-top: rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+#join-us h2 {
+    font-size: 3rem;
+}
+
+.join-us-button {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #F5FFFA;
+    background-color: #2f5e4e;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.join-us-button:hover {
+    background-color: #F5FFFA;
+    color: #285042;
+}
+
+.social-media {
+    height: 55%;
+    width: 100%;
+    border-radius: 0 5rem 5rem 0;
+    display: flex;
+    background-color: #2f5e4e;
+    flex: 2;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-media img {
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+.join-us-text {
+    padding: 0 1rem;
+    flex: 3;
+}
+
+.qrcode {
+    height: 55%;
+    width: 100%;
+    border-radius: 5rem 0 0 5rem;
+    display: flex;
+    background-color: #2f5e4e;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcode img {
+    max-width: 19rem;
+}
+
+/* Footer */
+
+footer {
+    height: 4rem;
+    background-color: #2f5e4e;
+    text-align: center;
+}
+
+footer p {
+    color: #F5FFFA;
+    font-size: 1.15rem;
+    text-align: center;
+    padding-top: 1.2rem;
+}
