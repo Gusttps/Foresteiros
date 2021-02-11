@@ -17,11 +17,21 @@
                 <li class="menu-item"><a href="#join-us">Faça parte</a></li>
             </ul>
         </div>
+        <div id="mobileMenu">
+            <li class="mobile-menu-item"><a href="#foco">Foco</a></li>
+            <li class="mobile-menu-item"><a href="#lo-fi">Lo-fi</a></li>
+            <li class="mobile-menu-item"><a href="#join-us">Faça parte</a></li>
+        </div>
+        <div class="toggle" alt="toggle" onclick="changeToggle(this), closeOpenMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </header>
     <section class="presentation">
         <div class="presentation-text">
             <h2>Torne-se um Foresteiro, faça amigos estudando.</h2>
-            <p>Somos um grupo de estudantes que por meio do Forest App, buscamos focar, fazer amigos e apoiar uns aos outros. Está com dificuldades de concentração? Vamos nos ajudar!</p>
+            <p>Somos um grupo de estudantes que por meio do Forest App, busca focar, fazer amigos e apoiar uns aos outros. Está com dificuldades de concentração? Vamos nos ajudar!</p>
             <a class="button-presentation" href="#join-us"><div>Faça parte</div></a>
         </div>
         <div class="presentation-photo"></div>
@@ -66,15 +76,33 @@
             <a href="#"><img src="./images/fb-icon.png"/></a>
             <a href="#"><img src="./images/ig-icon.png"/></a>
             <a href="#"><img src="./images/whats-icon.png"/></a>
-        </div>
+        </div>       
         <div class="join-us-text">
             <h2>Então, bora ser um Foresteiro?</h2>
             <a class="join-us-button" href="#"><div>Faça parte</div></a>
         </div>
         <div class="qrcode"><img src="./images/qrcode-foresteiros.png"/></div>
+        <div class="social-media-mobile">
+            <a href="#"><img src="./images/fb-icon.png" /></a>
+            <a href="#"><img src="./images/ig-icon.png" /></a>
+            <a href="#"><img src="./images/whats-icon.png" /></a>
+        </div>
     </section>
     <footer>
         <p>Designed and developed by <a href="#">@Gusttps</a></p>
     </footer>
+    <script>
+        function changeToggle(x) {
+                x.classList.toggle("change");
+            }
+        function closeOpenMenu() {
+                var x = document.getElementById("mobileMenu");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            } 
+    </script>
 </body>
 </html>
